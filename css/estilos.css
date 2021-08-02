@@ -35,6 +35,12 @@ header {
       text-decoration: none;
       color: #000000; }
 
+@media all and (max-width: 576px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
 #inicio {
   background-color: #ffc6c8;
   min-height: 100vh;
@@ -81,7 +87,9 @@ header {
 
 @media all and (max-width: 576px) {
   #mi p {
-    margin: 1rem 3rem !important; } }
+    margin: 1rem 3rem !important; }
+  #mi .titulo {
+    margin: 10px 0; } }
 
 #portfolio {
   background-color: #fffec6;
@@ -115,12 +123,15 @@ header {
           background-image: linear-gradient(to top, #c1c6ee, #a6d7f5, #9de4ea, #b4ecd3, #dceec1); }
 
 @media all and (max-width: 576px) {
+  #portfolio .titulo {
+    margin: 10px 0; }
   #portfolio .contenedorCards {
     flex-direction: column;
-    justify-content: center;
     align-items: center; }
     #portfolio .contenedorCards .cards {
-      margin: 5px 0; } }
+      margin: 10px 0; }
+      #portfolio .contenedorCards .cards:hover {
+        transform: scale(1.1); } }
 
 #skills {
   background-color: #a8e7d0;
@@ -190,3 +201,13 @@ footer {
   footer .contacto {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 1.5rem; }
+
+@media all and (max-width: 576px) {
+  footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    footer .logo {
+      order: -1; }
+    footer .contacto {
+      text-align: center; } }

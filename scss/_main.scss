@@ -63,6 +63,14 @@ header{
 	}
 
 
+@media all and (max-width: 576px){
+	header{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;	
+	}
+}
+
 #inicio{
 	background-color: $rosa;
 	min-height: 100vh;
@@ -120,6 +128,9 @@ header{
 @media all and (max-width: 576px){
 	#mi p{
 		margin: 1rem 3rem !important;}
+
+	#mi .titulo{
+		margin: 10px 0;}
 	}
 
 #portfolio{
@@ -153,20 +164,26 @@ header{
 			color: $negro;
 			@include botones;
 
-
 			}
 		}
 	}
 }
 
 @media all and (max-width: 576px){
+	#portfolio .titulo{
+		margin: 10px 0;
+	}
+
 	#portfolio .contenedorCards{
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 
 		.cards{
-			margin: 5px 0;
+			margin: 10px 0;
+
+			&:hover{
+				transform:scale(1.1);
+			}
 		}
 
 	}}
@@ -260,4 +277,21 @@ footer{
 		font-family: $fuentePrincipal;
 		font-size: 1.5rem;
 	}	
+}
+
+
+@media all and (max-width: 576px){
+	footer{
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		.logo{
+			order: -1;
+		}
+
+		.contacto{
+			text-align: center;
+		}
+	}
 }
