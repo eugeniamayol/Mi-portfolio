@@ -14,6 +14,20 @@
   font-family: "WindSong", cursive;
   padding: 10px; }
 
+.irArriba {
+  padding: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+
+@media all and (max-width: 576px) {
+  .irArriba {
+    padding: 2px;
+    bottom: 30px;
+    right: 10px; } }
+
 header {
   background-color: #eeeeee;
   display: flex;

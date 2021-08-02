@@ -33,8 +33,24 @@
 	&:hover{
 		background-image: linear-gradient(to top, #c1c6ee, #a6d7f5, #9de4ea, #b4ecd3, #dceec1);	
 			}
-
 }
+
+.irArriba{ 
+	padding: 10px;
+	border-radius: 50%;
+	background: $blanco;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
+@media all and (max-width: 576px){
+	.irArriba{ 
+	padding: 2px;
+	bottom:30px;
+	right:10px;}
+}
+
 
 header{
 	background-color: $grisClaro;
@@ -295,3 +311,5 @@ footer{
 		}
 	}
 }
+
+
