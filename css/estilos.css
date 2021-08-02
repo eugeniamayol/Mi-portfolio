@@ -98,6 +98,10 @@ header {
     line-height: 1.8rem;
     font-family: "PT Sans Narrow", sans-serif;
     margin: 2rem 5rem; }
+  #mi ul {
+    font-family: "PT Sans Narrow", sans-serif; }
+    #mi ul span {
+      text-decoration: underline; }
 
 @media all and (max-width: 576px) {
   #mi p {
@@ -111,41 +115,35 @@ header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: center; }
   #portfolio .titulo {
     font-family: "WindSong", cursive;
     font-size: 2rem; }
-  #portfolio .contenedorCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    #portfolio .contenedorCards .cards {
-      background-color: #dceec1;
+  #portfolio .cards {
+    background-color: #dceec1;
+    border-radius: 10px;
+    padding-bottom: 20px; }
+    #portfolio .cards:hover {
+      transform: scale(1.3); }
+    #portfolio .cards a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000000;
+      background-color: #c1c6ee;
+      font-family: "PT Sans Narrow", sans-serif;
       border-radius: 10px;
-      padding-bottom: 20px; }
-      #portfolio .contenedorCards .cards:hover {
-        transform: scale(1.3); }
-      #portfolio .contenedorCards .cards a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #000000;
-        background-color: #c1c6ee;
-        font-family: "PT Sans Narrow", sans-serif;
-        border-radius: 10px;
-        padding: 10px; }
-        #portfolio .contenedorCards .cards a:hover {
-          background-image: linear-gradient(to top, #c1c6ee, #a6d7f5, #9de4ea, #b4ecd3, #dceec1); }
+      padding: 10px; }
+      #portfolio .cards a:hover {
+        background-image: linear-gradient(to top, #c1c6ee, #a6d7f5, #9de4ea, #b4ecd3, #dceec1); }
 
 @media all and (max-width: 576px) {
   #portfolio .titulo {
     margin: 10px 0; }
-  #portfolio .contenedorCards {
-    flex-direction: column;
-    align-items: center; }
-    #portfolio .contenedorCards .cards {
-      margin: 10px 0; }
-      #portfolio .contenedorCards .cards:hover {
-        transform: scale(1.1); } }
+  #portfolio .cards {
+    margin: 10px 0; }
+    #portfolio .cards:hover {
+      transform: scale(1.1); } }
 
 #skills {
   background-color: #a8e7d0;
@@ -211,7 +209,8 @@ footer {
   padding: 1rem 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
   footer .contacto {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 1.5rem; }

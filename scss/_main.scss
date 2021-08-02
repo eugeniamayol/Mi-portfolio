@@ -139,6 +139,14 @@ header{
 
 	p{
 		@include parrafos;}
+		
+	ul{
+		font-family: $fuentePrincipal;
+
+		span{
+			text-decoration: underline;
+		}
+	}
 }
 
 @media all and (max-width: 576px){
@@ -156,14 +164,11 @@ header{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	align-items: center;
 
 	.titulo{
 		@include titulos;}
 
-	.contenedorCards{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
 
 	.cards{
 		background-color: $verde;
@@ -178,31 +183,23 @@ header{
 			text-decoration: none;
 			text-transform: uppercase;
 			color: $negro;
-			@include botones;
-
-			}
+			@include botones;}
 		}
 	}
-}
+
 
 @media all and (max-width: 576px){
 	#portfolio .titulo{
 		margin: 10px 0;
 	}
 
-	#portfolio .contenedorCards{
-		flex-direction: column;
-		align-items: center;
-
-		.cards{
+	#portfolio .cards{
 			margin: 10px 0;
 
 			&:hover{
-				transform:scale(1.1);
-			}
+				transform:scale(1.1);}
 		}
-
-	}}
+	}
 
 
 #skills{
@@ -288,6 +285,7 @@ footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
 
 	.contacto{
 		font-family: $fuentePrincipal;
